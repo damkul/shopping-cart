@@ -1,0 +1,16 @@
+ul{
+    list-style: none;
+    margin: 10px;
+}
+ul li{
+    margin: 10px;
+}
+#total{
+    background-color: #2368f3;
+    height: 30px;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 50;
+    margin-top: 15px;
+}

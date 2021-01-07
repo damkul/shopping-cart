@@ -1,0 +1,29 @@
+
+li,a,h3{
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+   }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: auto;
+}
+.nav-area{
+    list-style: none;
+}
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: small;
+}
+.nav-area li a:hover{
+   color:#2368f3;
+   font-size: 15px;
+
+}
+a{
+    color: black;
+}

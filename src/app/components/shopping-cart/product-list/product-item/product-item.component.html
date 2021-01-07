@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="product-box">
+    <img [src]="productItem.imageUrl" alt="aaa">
+    <div class="card">
+      <div class="card-text">
+        <strong><small class="text-muted">{{productItem.price | currency:'INR'}}</small></strong>
+      </div>
+      <div class="card-body">
+          <p>{{productItem.name}}</p>
+          <p>{{productItem.description}}</p>
+          <div class="btn-group">
+            <button (click)="handleAddToCart()">Add To Cart</button>
+            <button routerLink="/details" (click)="handleViewDetails()">View Details</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,17 @@
+
+.filter-header{
+    text-align: center;
+}
+.from-group{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.filter-btn{
+    margin-left: 20%;
+    border:1px solid #2368f3;
+    background-color: #2368f3;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: smaller;
+}
