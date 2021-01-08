@@ -7,7 +7,7 @@
       <li><a routerLink="/home">Home</a></li>
       <li><a routerLink="/home">About Us</a></li>
       <li><a routerLink="/home">Contact Us</a></li>
-      <li><a class="cart-image" (click)="goToCart()"><img src="assets/images/cart-black.png" alt="cart"></a></li>
+      <li><a class="cart-image" (click)="goToCart()"><img src="assets/images/cart-black.png" alt="cart">{{cartItems.length}}</a></li>
     </ul>
   </nav>
 </header>
