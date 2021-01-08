@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .container{
-    width:30%;
-    display: inline;
-    float: left;
-    margin-left: 20px;
+    width:100%;
 }
 .product-box{
-    width: fit-content;
+    display: inline;
+    float: left;
+    margin: 10px;
+    width: 30%;
+    max-height: 400px;
 }
 img{
-    width:250px;
-    height: 300px;
+    
+    height: 250px;
+    width: 100%;
 }
 .btn-group button{
     height: 30px;
@@ -17,13 +21,27 @@ img{
     font-family: 'Roboto Slab', serif;
     font-size: smaller;
     margin-bottom: 20px;
+    width: 48%;
+    
 }
 .btn-group button:nth-of-type(1){
-    border:1px solid #2368f3;
-    background-color: #2368f3;
+    border:0.5px solid #ff3e6c;
+    background-color: #ff3e6c;
 }
 .btn-group button:nth-of-type(2){
-    border:1px solid #2368f3;
+    border:0.5px solid	#ff3e6c;
     background-color: white;
     color: black;
+    float: right;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+    
+}
+.sub-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: small;
 }

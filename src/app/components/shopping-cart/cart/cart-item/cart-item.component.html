@@ -1,1 +1,11 @@
-<span>{{cartItem.productname}}</span> X <span>{{cartItem.qty}}</span> : <strong>{{cartItem.qty * cartItem.price | currency:'INR'}}</strong>
+<div class="container">
+    <div class="product-image">
+        <img [src]="cartItem.imageUrl" alt="aa">
+    </div>
+    <div class="product-details">
+        <span class="heading">Product Name : {{cartItem.productname}}</span><br>
+        <span class="sub-heading">Quantity : {{cartItem.qty}}</span><br>
+        <span class="sub-heading"><strong>Total : {{cartItem.qty * cartItem.price | currency:'INR'}}</strong></span>
+        <span><button class="show-details" (click)="goToDetails()">View Details</button></span>
+    </div> 
+</div>

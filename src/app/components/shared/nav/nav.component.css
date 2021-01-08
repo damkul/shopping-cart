@@ -7,7 +7,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 .nav-area{
@@ -20,7 +20,7 @@ header{
     font-size: small;
 }
 .nav-area li a:hover{
-   color:#2368f3;
+   color:#ff3e6c;
    font-size: 15px;
 
 }

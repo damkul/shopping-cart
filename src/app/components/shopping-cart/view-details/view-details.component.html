@@ -1,3 +1,12 @@
+<app-nav></app-nav>
 <div class="container">
-  {{productItem.id}}
+  <div class="product-image">
+      <img [src]="productItem.imageUrl" alt="aa">
+  </div>
+  <div class="product-details">
+      <span class="heading">Product Name : {{productItem.name}}</span><br>
+      <span class="heading">Price : {{productItem.price}}</span><br>
+      <hr>
+      <span class="sub-heading">Product Description : {{productItem.description}}</span><br>
+  </div> 
 </div>

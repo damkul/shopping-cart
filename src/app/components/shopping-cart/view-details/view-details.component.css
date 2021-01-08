@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    margin: 8% 25% 0 25%;
+}
+.product-image img{
+    width: 360px;
+    height: 360px;
+    padding-right:20px ;
+    overflow: visible;
+}
+.show-details{
+    background-color:#ff3e6c;
+    border: 1px solid #ff3e6c;
+    border-color: #ff3e6c;
+    margin-left: 10px;
+    font-size: small;
+    font: outline;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+.sub-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: small;
+}

@@ -1,9 +1,9 @@
-<div *ngIf="cartItems.length === 0" class="empty-cart"><strong>Your Cart is Empty.</strong></div>
+<div *ngIf="cartItems.length === 0" class="empty-cart">Your Cart is Empty.</div>
 <ul *ngIf="cartItems.length > 0" class="list-group">
   <li class="list-group-item" *ngFor="let item of cartItems">
     <app-cart-item [cartItem]="item"></app-cart-item>
   </li>
-  <li class="list-group-item" id="total">
-    Total : {{cartTotal | currency:'INR'}}
+  <li class="list-group-item total">
+   <span>Total : {{cartTotal | currency:'INR'}}</span> 
   </li>
 </ul>

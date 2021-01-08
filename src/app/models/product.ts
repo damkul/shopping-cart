@@ -4,6 +4,7 @@ export class Product
     name:string;
     description:string;
     price:number;
+    qty:number;
     imageUrl:string;
 
     constructor(id,name,descrption='',price=0,imageUrl){

@@ -14,9 +14,9 @@ div.col:nth-of-type(1){
 }
  
 div.col:nth-of-type(2){
-    flex: 6;
+    flex: 8;
 }
  
 div.col:nth-of-type(3){
-    flex: 2;
+    flex: 4;
 }

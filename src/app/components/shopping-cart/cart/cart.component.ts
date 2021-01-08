@@ -2,6 +2,7 @@ import { Product } from 'src/app/models/product';
 import { Component, OnInit } from '@angular/core';
 import { MessengerService } from 'src/app/services/messenger.service';
 import{Router,NavigationEnd, ActivatedRoute } from '@angular/router'
+import { StateService } from 'src/app/services/state.service';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -10,13 +11,14 @@ import{Router,NavigationEnd, ActivatedRoute } from '@angular/router'
 export class CartComponent implements OnInit {
 
   cartItems = [];
-  constructor(private msg:MessengerService) { }
+  constructor(private msg:MessengerService,private stateService: StateService,private router:Router) { }
   cartTotal = 0
   
   ngOnInit() {
-    this.msg.getMsg().subscribe((product:Product) =>{
-     this.addProductToCart(product);
-     });
+   // this.msg.getMsg().subscribe((product:Product) =>{
+   //  this.addProductToCart(product);
+    // });
+    this.cartItems = this.stateService.cartItems
           
   }
 
@@ -36,7 +38,9 @@ export class CartComponent implements OnInit {
         productId:product.id,
         productname:product.name,
         qty:1,
-        price:product.price});
+        price:product.price,
+        imageUrl:product.imageUrl,
+        description:product.description});
     }
 
     this.cartTotal = 0 ;
