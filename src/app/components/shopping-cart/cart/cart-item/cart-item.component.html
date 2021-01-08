@@ -1,11 +1,12 @@
+<app-nav></app-nav>
 <div class="container">
     <div class="product-image">
         <img [src]="cartItem.imageUrl" alt="aa">
     </div>
     <div class="product-details">
-        <span class="heading">Product Name : {{cartItem.productname}}</span><br>
+        <span class="heading">Product Name : {{cartItem.name}}</span><br>
         <span class="sub-heading">Quantity : {{cartItem.qty}}</span><br>
         <span class="sub-heading"><strong>Total : {{cartItem.qty * cartItem.price | currency:'INR'}}</strong></span>
-        <span><button class="show-details" (click)="goToDetails()">View Details</button></span>
+        <span><a class="show-details" (click)="goToDetails()">View Details</a></span>
     </div> 
 </div>

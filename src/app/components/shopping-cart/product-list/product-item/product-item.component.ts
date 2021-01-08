@@ -21,29 +21,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   handleAddToCart(){
-  // this.msg.sendMsg(this.productItem);
-   let productExist = false;
-    
-    for(let i in this.cartItems)
-    {
-      if (this.cartItems[i].productId === this.productItem.id) {
-        this.cartItems[i].qty++;
-        productExist = true;
-        break;
-      }
-    }  
-    if (!productExist) {
-        this.cartItems.push({
-        productId:this.productItem.id,
-        productname:this.productItem.name,
-        qty:1,
-        price:this.productItem.price,
-        imageUrl:this.productItem.imageUrl,
-        description:this.productItem.description});
-        
-        
-    }
-    this.stateService.cartItems = this.cartItems;
+    this.stateService.addItemToCart(this.productItem)
   }
   handleViewDetails(){
     this.stateService.product = this.productItem;
